@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+
+    <style>
+        .kutu {
+            width: 150px;
+            height: 150px;
+        }
+
+        #kutu1 {
+            background: green;
+            position: fixed;
+            bottom: 15px;
+            right: 5px;
+        }
+
+        #kutu2 {
+            background: blue;
+            top: 5px;
+            left: 45px;
+            width: 100%;
+            position: sticky;
+
+        }
+
+        #kutu3 {
+            background: brown;
+            bottom: 5px;
+            left: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+            <!-- absolute ist referenz seitenanfang relative ist referenz anfang von nächster komponente-->
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab iste beatae aspernatur, porro nihil esse eum itaque
+        laborum, quod, dignissimos ipsum odio consectetur expedita tenetur autem labore similique voluptas velit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque pariatur inventore debitis fuga eius eos impedit
+        ratione accusamus voluptates magni voluptatum, vitae recusandae odit dolor? Unde architecto amet alias quaerat.
+    </p>
+    <div class="kutu" id="kutu1">für "canli yardim" o.ä...position fixed.</div>
+    <div class="kutu" id="kutu2">"Ana menü barlar sticky.. immer oben bleiben..."</div>
+    <div class="kutu" id="kutu3">Kutu3</div>
+    <div style="height: 3000px;">bla</div>
+</body>
+
+</html>
