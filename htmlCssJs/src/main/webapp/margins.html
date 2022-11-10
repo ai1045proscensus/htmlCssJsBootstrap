@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margins</title>
+
+    <style>
+        .kutu {
+            width: 150px;
+            height: 150px;
+            float: left;
+        }
+
+        #kutu1 {
+            background: green;
+            margin: 30px 100px 10px 40px;
+
+        }
+
+        #kutu2 {
+            background: blue;
+            margin: 200px 50px;
+        }
+
+        #kutu3 {
+            background: brown;
+            margin: auto;
+
+        }
+
+        span {
+            margin: 50px;
+            background: lightcoral;
+            display: inline-block;
+            border-width: 3px;
+            border-style: solid;
+            padding: 5px;
+        }
+    </style>
+
+    <!-- margin: 30px 100px 10px 40px: üst sag alt sol ... saat gibi -->
+    <!-- margin: 200px 50px;: alt üst 200 ve sag sol 50 ...  -->
+    <!-- margin: auto: hep merkezde (wenn die anderen boxen kein margin / float usw haben)
+    =>   -->
+
+</head>
+
+<body>
+
+    <!-- absolute ist referenz seitenanfang relative ist referenz anfang von nächster komponente-->
+
+    <div class="kutu" id="kutu1">kutu1</div>
+    <div class="kutu" id="kutu2">"kutu2"</div>
+    <div class="kutu" id="kutu3">Kutu3</div>
+    <br>
+    <span>1</span><span>2</span><span>3</span><span>4</span>
+</body>
+
+</html>
