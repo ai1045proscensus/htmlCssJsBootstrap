@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links u buttons schönmachen</title>
+
+    <style>
+        a {
+            color: green;
+            font-size: 20px;
+            margin: 10px;
+            /* damit der unterstrich weggeht beim link: */
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: yellow;
+            font-size: 25px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            transition-duration: 0.4s;
+            border: none;
+            border-radius: 50px;
+        }
+
+        .button:hover {
+            background-color: #4CAF50;
+            color: blue;
+        }
+
+        .button2 {
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            transition-duration: 0.7s;
+            border: none;
+            border-radius: 50px;
+        }
+
+        .button2:hover {
+            background-color: blue;
+            color: greenyellow;
+        }
+    </style>
+
+</head>
+
+<body>
+    <a href="#">link1</a>
+    <a href="#">link2</a>
+    <a href="#">link3</a>
+    <a href="#">link4</a>
+
+    <br><br><br>
+
+    <!-- https://www.w3schools.com/tags/tag_button.asp -->
+    <!-- https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button3 -->
+
+    <button class="button">Anasayfa</button>
+    <button class="button">Hakkimizda</button>
+    <button class="button">Kategorien</button>
+    <button class="button">contact</button>
+
+    <br><br><br>
+    
+    <button class="button2">Anasayfa</button>
+    <button class="button2">Hakkimizda</button>
+    <button class="button2">Kategorien</button>
+    <button class="button2">contact</button>
+
+</body>
+
+</html>
