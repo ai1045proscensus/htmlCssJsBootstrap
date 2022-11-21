@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>links u buttons schönmachen</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
         a {
             color: green;
@@ -50,6 +54,11 @@
             background-color: blue;
             color: white;
         }
+        
+        /* wir können importierte buttons auch stylen (farbe usw...): */
+        i{
+            color: #4CAF50;
+        }
     </style>
 
 </head>
@@ -65,17 +74,33 @@
     <!-- https://www.w3schools.com/tags/tag_button.asp -->
     <!-- https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button3 -->
 
-    <button class="button">Anasayfa</button>
-    <button class="button">Hakkimizda</button>
-    <button class="button">Kategorien</button>
-    <button class="button">contact</button>
+    <button class="button">
+        <i class="fa-solid fa-house"></i>
+        Anasayfa</button>
+    <button class="button">
+        <i class="fa-solid fa-address-card"></i>
+        Hakkimizda</button>
+    <button class="button">
+        <i class="fa-solid fa-cart-shopping"></i>
+        Kategorien</button>
+    <button class="button">
+        <i class="fa-solid fa-phone"></i>
+        contact</button>
 
     <br><br><br>
-    
-    <button class="button2">Anasayfa</button>
-    <button class="button2">Hakkimizda</button>
-    <button class="button2">Kategorien</button>
-    <button class="button2">contact</button>
+
+    <button class="button2">
+        <i class="fa-solid fa-house"></i>
+        Anasayfa</button>
+    <button class="button2">
+        <i class="fa-solid fa-address-card"></i>
+        Hakkimizda</button>
+    <button class="button2">
+        <i class="fa-solid fa-cart-shopping"></i>
+        Kategorien</button>
+    <button class="button2">
+        <i class="fa-solid fa-phone"></i>
+        contact</button>
 
 </body>
 
