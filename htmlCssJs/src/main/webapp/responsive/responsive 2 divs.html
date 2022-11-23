@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive 2 divs tasarim</title>
+    <style>
+        .kutu {
+            width: 25%;
+            height: 250px;
+            background: lightskyblue;
+            float: left;
+            border: 1px solid black;
+        }
+
+        @media screen and (max-width:700px) {
+            .kutu {
+                width: 50%;
+                /* height: 250px;
+                background: lightskyblue;
+                float: left;
+                border: 1px solid black; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- abk: div.kutu*5 dann tab => class kutu 5 mal-->
+    <div class="kutu"></div>
+    <div class="kutu"></div>
+    <div class="kutu"></div>
+    <div class="kutu"></div>
+    <div class="kutu"></div>
+    <div class="kutu"></div>
+</body>
+
+</html>
