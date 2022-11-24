@@ -1,3 +1,10 @@
+<!-- wichtig hier:         
+img{
+    max-width: 100%;
+
+    sonst resim cok büyük div'e sigmiyor... -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,13 +23,23 @@
 
         .kutu {
             width: 25%;
-            height: 250px;
             background: lightskyblue;
             float: left;
             border: 1px solid black;
         }
 
-        @media screen and (max-width:700px) {
+        /* 3 tane kutu/resim yan yana istiyoruz */
+        @media screen and (max-width:900px) {
+            .kutu {
+                width: 33%;
+                /* height: 250px;
+                background: lightskyblue;
+                float: left;
+                border: 1px solid black; */
+            }
+        }
+
+        @media screen and (max-width:600px) {
             .kutu {
                 width: 50%;
                 /* height: 250px;
@@ -41,17 +58,31 @@
                 border: 1px solid black; */
             }
         }
+
+        img{
+            max-width: 100%;
+            /* ohne max tut er immer größer machen... größer als originalgröße von bild
+            => kommt zu verzerrungen. um das zu verhindern => max-width => stoppt bei originalgröße
+            => EMPFEHLUNG so bei Bildern! 
+            
+            wenn man will, dass max-width noch kleiner ist als originalgröße =>
+             width bei img-tag angeben (s. 313 unten) => en fazla 313 px kadar büyüyor*/
+
+            height: auto; 
+            /* weil wenn ich hier fixen wert angebe bozulur wenn ich schmaler mach zb...
+            böylece ändert er das automatisch relativ zur breite */
+        }
     </style>
 </head>
 
 <body>
     <!-- abk: div.kutu*5 dann tab => class kutu 5 mal-->
-    <div class="kutu"></div>
-    <div class="kutu"></div>
-    <div class="kutu"></div>
-    <div class="kutu"></div>
-    <div class="kutu"></div>
-    <div class="kutu"></div>
+    <div class="kutu"><img src="../images/arama puni.png" alt=""></div>
+    <div class="kutu"><img src="../images/TODO.png" alt=""></div>
+    <div class="kutu"><img src="../images/arama puni.png" alt=""></div>
+    <div class="kutu"><img src="../images/Bildschirmfoto 2022-09-10 um 13.25.56.png" alt=""></div>
+    <div class="kutu"><img src="../images/Bildschirmfoto 2022-09-10 um 13.25.56.png" alt=""></div>
+    <div class="kutu"><img src="../images/Bildschirmfoto 2022-09-10 um 13.26.02.png" alt=""></div>
 </body>
 
 </html>
