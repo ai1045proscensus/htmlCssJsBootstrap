@@ -1,3 +1,20 @@
-body{
+/* wir wollen default margin und padding werte annullieren
+
+* (stern) heisst: gilt für ALLE elements: */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: blue; zum testen */
+
+}
+
+/* aynen,  gilt für ALLE elemente */
+html {
+    /* color: green; zum testen */
+}
+
+
+body {
     font-family: 'Open Sans', sans-serif;
 }
