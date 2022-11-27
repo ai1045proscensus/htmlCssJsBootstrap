@@ -12,9 +12,36 @@
 /* aynen,  gilt für ALLE elemente */
 html {
     /* color: green; zum testen */
+    font-size: 10px;
 }
 
 
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem; /*rem: faktor: 1.6 MAL den wert vom wert in html-tag => 10px *1.6 = 16px*/
+    line-height: 1.5; /*satirlar arasindaki mesafe*/
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+a {
+    text-decoration: none; /*no underline any more*/
+}
+
+p {
+    padding: 1.6rem 0;
+}
+
+header {
+    height: 46rem;
+    background-color: aqua; /*sadece header'in kapsadigi alani görmek icin...*/
+}
+
+header .bg-image { /* header ICINDE bg-image classi...*/
+    background-image: url(images/ai_transform.jpg); /*Reference an image file by URL*/
+    height: 46rem; /*sonst sieht man das bild NICHT*/
+    width: 100%;
+    background-size: cover; /*dh er soll ganzes bild sayfaya sigdirsin*/
+    background-position: center; /*tam ortalasin resmi div'e*/
 }
