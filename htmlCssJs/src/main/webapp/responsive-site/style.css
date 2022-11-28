@@ -1,5 +1,4 @@
-/* wir wollen default margin und padding werte annullieren
-
+/* wir wollen default margin und padding werte annullieren:
 * (stern) heisst: gilt für ALLE elements: */
 * {
     margin: 0;
@@ -35,13 +34,22 @@ p {
 
 header {
     height: 46rem;
-    background-color: aqua; /*sadece header'in kapsadigi alani görmek icin...*/
+    /* background-color: aqua; sadece header'in kapsadigi alani görmek icin... */
 }
 
 header .bg-image { /* header ICINDE bg-image classi...*/
-    background-image: url(images/ai_transform.jpg); /*Reference an image file by URL*/
+    background-image: url(images/ai\ robot.jpg); /*Reference an image file by URL*/
     height: 46rem; /*sonst sieht man das bild NICHT*/
     width: 100%;
     background-size: cover; /*dh er soll ganzes bild sayfaya sigdirsin*/
     background-position: center; /*tam ortalasin resmi div'e*/
+    opacity: 0.5; /* biraz transparent görünmesi icin...*/
+    position: absolute; /*damit das untere div (content), dh die schrift, nach oben rutscht 
+                          cünkü absolute deyince normal akis bozuluyor */
+    z-index: -1;
+}
+
+header h1 {
+    padding: 12rem;
+    padding-bottom: 0;
 }
